@@ -55,8 +55,21 @@
 
 //     echo "Username is not set";
 // }
+$host = "localhost";
+$dbname = "phpdatabase";
+$username = "root";
+$password = "";
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    echo "connected successfully";
+}catch(PDOExeption $e) {
+    die("connection failed:" . $e->getMessage());
+}
 ?>
-<html lang="en">
+<!-- <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,10 +77,13 @@
 </head>
 <body>
     <!-- Signup form -->
-    <div class="container">
+    <!-- <div class="container">
     <h2>Sign Up Form</h2>
     <br>
     <form action="process_signup.php" method="post">
+    <div class="form-input">
+        <input type="username" name="username" placeholder="enter username" required>
+        </div>
         <div class="form-input">
         <input type="email" name="email" placeholder="enter email" required>
         </div>
@@ -80,5 +96,5 @@
 
     </form>
 </div>
-</body>
-</html>
+</body> -->
+<!-- </html>  -->
