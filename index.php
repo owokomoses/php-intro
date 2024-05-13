@@ -34,8 +34,13 @@
 // compute_balance();
 
 //parameters
-function compute_balance($deposit,$withdrawal){
-    echo $deposit - $withdrawal;;
-}
-compute_balance(40000,5000);
+// function compute_balance($deposit,$withdrawal){
+//     echo $deposit - $withdrawal;;
+// }
+// compute_balance(40000,5000);
+
+//example 2
+//shows datatype
+$msg = "PHP is the simple language i have come across";
+var_dump($msg);
 ?>
