@@ -17,8 +17,25 @@
 
 // result
 //echo "The sum is: $sum";
-$deposit = 40000;
-$withdrawal = 5000;
-$balance = $deposit - $withdrawal;
-echo $balance;
+
+//varible
+//$deposit = 40000;
+//$withdrawal = 5000;
+//$balance = $deposit - $withdrawal;
+//echo $balance;
+
+//function
+// function compute_balance(){
+//     $deposit = 40000;
+//     $withdrawal = 5000;
+//     $balance = $deposit - $withdrawal;
+//     echo $balance;
+// }
+// compute_balance();
+
+//parameters
+function compute_balance($deposit,$withdrawal){
+    echo $deposit - $withdrawal;;
+}
+compute_balance(40000,5000);
 ?>
