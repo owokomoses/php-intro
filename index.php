@@ -41,6 +41,17 @@
 
 //example 2
 //shows datatype
-$msg = "PHP is the simple language i have come across";
-var_dump($msg);
+// $msg = "PHP is the simple language i have come across";
+// var_dump($msg);
+
+//example 3
+$username = "john";
+
+if(isset($username)){
+    echo "Username is set";
+
+}else{
+
+    echo "Username is not set";
+}
 ?>
