@@ -1,4 +1,3 @@
-<!-- introduction to php -->
 <?php
 //echo "Hello everyone i am back from my holiday";
 
@@ -55,18 +54,22 @@
 
 //     echo "Username is not set";
 // }
-$host = "localhost";
-$dbname = "phpdatabase";
-$username = "root";
-$password = "";
+$host = 'localhost'; // or your database host
+$dbname = 'phpdatabas'; // your database name
+$username = 'root'; // your database username
+$password = ''; // your database password
 
 try {
+    // Create a PDO instance
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+
+    // Set PDO to throw exceptions on error
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    echo "connected successfully";
-}catch(PDOExeption $e) {
-    die("connection failed:" . $e->getMessage());
+
+    echo "Connected successfully";
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
 ?>
 <!-- <html lang="en">
@@ -75,7 +78,7 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
 </head>
-<body>
+<body> -->
     <!-- Signup form -->
     <!-- <div class="container">
     <h2>Sign Up Form</h2>
