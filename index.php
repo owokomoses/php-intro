@@ -40,18 +40,45 @@
 // compute_balance(40000,5000);
 
 //example 2
-//shows datatype
+//use of var_dump
 // $msg = "PHP is the simple language i have come across";
 // var_dump($msg);
 
 //example 3
-$username = "john";
+//use of isset
+// $username = "john";
 
-if(isset($username)){
-    echo "Username is set";
+// if(isset($username)){
+//     echo "Username is set";
 
-}else{
+// }else{
 
-    echo "Username is not set";
-}
+//     echo "Username is not set";
+// }
 ?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+    <!-- Signup form -->
+    <div class="container">
+    <h2>Sign Up Form</h2>
+    <br>
+    <form action="process_signup.php" method="post">
+        <div class="form-input">
+        <input type="email" name="email" placeholder="enter email" required>
+        </div>
+        <div class="form-input">
+        <input type="password" name="password" placeholder="enter password" required>
+        </div>
+        <div class="btn">
+        <input type="submit" name="submit" value="Sign Up">
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
