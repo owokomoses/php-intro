@@ -7,6 +7,6 @@
 </head>
 <body>
 <?php include 'navbar.php'?>
-<h2>Services</h2>
+
 </body>
 </html>

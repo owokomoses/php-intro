@@ -8,15 +8,21 @@
     <title>Login</title>
     <style>
         body {
-            background-color: #f8f9fa;
+            width: 100%;
+            height: 90vh;
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/login.webp);
+            background-size: cover;
+            background-position: center;
+            position: relative;
         }
         .container {
             max-width: 500px;
             margin-top: 50px;
             padding: 20px;
-            background: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(195, 195, 195, 0.6); /* Adjust opacity as needed */
+            border: 1px solid #ccc;
         }
         h2 {
             text-align: center;

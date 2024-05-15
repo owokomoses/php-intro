@@ -6,8 +6,10 @@ $password = $_POST['password'];
 // Include database connection
 include 'dbConnect.php';
 
-$sql = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$password')";
+//hashing of password
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
+$sql = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$hashed_password')";
 $result = $db_connect->query($sql);
 
 if($result){

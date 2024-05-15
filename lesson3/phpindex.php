@@ -9,6 +9,6 @@
 <?php include 'navbar.php'?>
 
 <!-- main content -->
-<h2>Home</h2>
+
 </body>
 </html>
