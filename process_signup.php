@@ -22,10 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password']; 
 
     // Prepare and bind
-    $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?,  ?, ?)");
     $stmt->bind_param("sss", $username, $email, $password);
 
-    // Execute the statement
     if ($stmt->execute()) {
         echo "New user registered successfully";
     } else {
