@@ -7,15 +7,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Signup</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 500px;
+            margin-top: 50px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .btn-primary {
+            width: 100%;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Include navigation -->
-    <?php include 'navbar.php' ?>
+
     <!-- Main Content -->
     <div class="container">
-        <h2>Sign Up Form</h2>
-        <br>
+        <h2>Sign Up</h2>
         <form action="process_signup.php" method="post">
             <div class="form-group">
                 <label for="username">Username</label>
