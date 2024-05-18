@@ -7,9 +7,9 @@ $password = $_POST['password'];
 include 'dbConnect.php';
 
 //hashing of password
-$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+//$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$hashed_password')";
+$sql = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$password')";
 $result = $db_connect->query($sql);
 
 if($result){
