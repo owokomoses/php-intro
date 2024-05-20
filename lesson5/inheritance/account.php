@@ -6,7 +6,7 @@ class Account{
 
 
     //methods
-    function get_account_no(){
+    function get_AccountNo(){
         echo $this->account_no;
     }   
 }
